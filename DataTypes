@@ -3,17 +3,17 @@
 ushort Ushort = 52103;
 sbyte Sbyte = 115;
 int Int = 4825932;
-sbyte SecSbyte = 97;
+sbyte secSbyte = 97;
 short Short = -10000;
-Console.WriteLine("ushort: {0}, sbyte: {1}, int: {2}, sbyte: {3}, short: {4}", Ushort, Sbyte, Int, SecSbyte, Short);
+Console.WriteLine("ushort: {0}, sbyte: {1}, int: {2}, sbyte: {3}, short: {4}", Ushort, Sbyte, Int, secSbyte, Short);
 
 2.    Float or Double?
 
 double Double = 34.567839023;
 float Float = 12.345f;
-double SecDouble = 8923.1234567;
-float SecFloat = 3456.091f;
-Console.WriteLine("Double: {0}, Float: {1}, Double: {2}, Float: {3}", Double, Float, SecDouble, SecFloat);
+double secDouble = 8923.1234567;
+float secFloat = 3456.091f;
+Console.WriteLine("Double: {0}, Float: {1}, Double: {2}, Float: {3}", Double, Float, secDouble, secFloat);
 
 3.    Comparing Floats
 
@@ -80,9 +80,9 @@ Console.WriteLine(isFemale);
 
 string Hallo = "Hallo";
 string World = "World";
-object ObjSequence = Hallo + " " + World;
-string StrSequence = Convert.ToString(ObjSequence);
-Console.WriteLine("{0}", StrSequence);
+object objSequence = Hallo + " " + World;
+string strSequence = Convert.ToString(objSequence);
+Console.WriteLine("{0}", strSequence);
 
 8.    Quotes in Strings
 
@@ -129,7 +129,7 @@ char Sex;
 //Лично ID
 long ID;
 //ID в фирмата
-int EmployeeID;
+int employeeID;
 
 //Първи запис
 Fn = "Dimitar";
@@ -137,8 +137,8 @@ Ln = "Bonev";
 Age = 22;
 Sex = 'm';
 ID = 8736450923;
-EmployeeID = 27564567;
-Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + EmployeeID + "\n");
+employeeID = 27564567;
+Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + employeeID + "\n");
 
 //2ри запис
 Fn = "Ivan";
@@ -146,8 +146,8 @@ Ln = "Atanassov";
 Age = 39;
 Sex = 'm';
 ID = 4537687943;
-EmployeeID = 27561563;
-Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + EmployeeID + "\n");
+employeeID = 27561563;
+Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + employeeID + "\n");
 
 //3ти запис
 Fn = "Stoil";
@@ -155,8 +155,8 @@ Ln = "Mostrov";
 Age = 26;
 Sex = 'm';
 ID = 9463728175;
-EmployeeID = 27565554;
-Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + EmployeeID + "\n");
+employeeID = 27565554;
+Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + employeeID + "\n");
 
 //4ти запис
 Fn = "Vlado";
@@ -164,35 +164,35 @@ Ln = "Mihov";
 Age = 23;
 Sex = 'm';
 ID = 5867043215;
-EmployeeID = 27562654;
-Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + EmployeeID + "\n");
+employeeID = 27562654;
+Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + employeeID + "\n");
 
 12.    Bank Account Data
 
-string FName, MName, LName, BName, IBAN;
+string fName, mName, lName, bName, IBAN;
 decimal amount;
-ulong CreditCard, DebitCard, MasterCard;
+ulong creditCard, debitCard, masterCard;
 
-FName="Ivan";
-MName="Nikolov";
-LName="Atanassov";
-BName="Първа Инвестиционна Банка";
+fName="Ivan";
+mName="Nikolov";
+lName="Atanassov";
+bName="Първа Инвестиционна Банка";
 IBAN="BG20TTBB94003526341239";
 amount = 243776.114M;
-CreditCard = 0220020043687900;
-DebitCard = 5467911156773546;
-MasterCard = 1627069517354657;
+creditCard = 0220020043687900;
+debitCard = 5467911156773546;
+masterCard = 1627069517354657;
 
-Console.WriteLine("First Name: " + FName + "\nMiddle Name: " + MName + "\nLast Name: " + LName + "\nBank Name: " + BName + "\nIBAN: " + IBAN + "\nBalance: " + amount + "\nCreditCard: " + CreditCard + "\nDebitCard: " + DebitCard + "\nMasterCard: " + MasterCard + "\n");
+Console.WriteLine("First Name: " + fName + "\nMiddle Name: " + mName + "\nLast Name: " + lName + "\nBank Name: " + bName + "\nIBAN: " + IBAN + "\nBalance: " + amount + "\nCreditCard: " + creditCard + "\nDebitCard: " + debitCard + "\nMasterCard: " + masterCard + "\n");
 
 13.    Null Values Arithmetic
 
-int? NullInt=null;
-double? NullDoub=null;
-Console.WriteLine("Nullable Int: {0}, Nullable Double: {1}", NullInt, NullDoub);
-NullInt = 123;
-NullDoub = 12.667;
-Console.WriteLine("Nullable Int(assigned val): {0}, Nullable Double(assigned val): {1}", NullInt, NullDoub);
+int? nullInt=null;
+double? nullDoub=null;
+Console.WriteLine("Nullable Int: {0}, Nullable Double: {1}", nullInt, nullDoub);
+nullInt = 123;
+nullDoub = 12.667;
+Console.WriteLine("Nullable Int(assigned val): {0}, Nullable Double(assigned val): {1}", nullInt, nullDoub);
 
 14.    * Print the ASCII Table
 
