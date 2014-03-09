@@ -1,0 +1,202 @@
+1.    Declare Variables
+
+ushort Ushort = 52103;
+sbyte Sbyte = 115;
+int Int = 4825932;
+sbyte SecSbyte = 97;
+short Short = -10000;
+Console.WriteLine("ushort: {0}, sbyte: {1}, int: {2}, sbyte: {3}, short: {4}", Ushort, Sbyte, Int, SecSbyte, Short);
+
+2.    Float or Double?
+
+double Double = 34.567839023;
+float Float = 12.345f;
+double SecDouble = 8923.1234567;
+float SecFloat = 3456.091f;
+Console.WriteLine("Double: {0}, Float: {1}, Double: {2}, Float: {3}", Double, Float, SecDouble, SecFloat);
+
+3.    Comparing Floats
+
+//променливите от тип Double, които ще полозваме
+double first;
+double second;
+double eps;
+//Bool променливата, определяща, True или False да изведем
+bool estimate=false;
+//Числата, които ще ползваме
+first = double.Parse(Console.ReadLine());
+second = double.Parse(Console.ReadLine());
+Console.WriteLine("{0}", first+second);
+//разбираме, дали пъвото число е по - голямо от второто
+if (first >= second)
+{
+    //вземаме разликата между 2те
+    eps = first - second;
+    //ако разликата е по - голяма от 0.000001
+    if (eps >= 0.000001)
+        estimate = false;
+    //ако е по - малка от 0.000001
+        else
+            estimate = true;
+}
+//ако 2рото число е по - голямо
+else
+{
+        //вземаме разликата между 2те
+        eps = second - first;
+        //ако разликата е по - голяма от 0.000001
+        if (eps >= 0.000001)
+                estimate = false;
+        //ако е по - малка от 0.000001
+        else
+                estimate = true;
+}
+//извеждане на резултатите
+Console.Write("The result is: ");
+Console.Write(estimate);
+Console.Write(". Because the difference is: " + eps + "\n");
+
+4.    Variable in Hexadecimal Format
+
+int hex = 0x254;
+//hex=596
+Console.WriteLine(hex);
+
+5.    Unicode Value
+
+char Unicode = 'H';
+int Num;
+Console.WriteLine("Char: " + Unicode);
+Console.WriteLine("Code: " + (int)Unicode);
+Num=(int)Unicode;
+Console.WriteLine("Hexadecimal: " + 0x72);
+
+6.    Boolean Variable
+
+bool isFemale = false;
+Console.WriteLine(isFemale);
+
+7.    Strings and Objects
+
+string Hallo = "Hallo";
+string World = "World";
+object ObjSequence = Hallo + " " + World;
+string StrSequence = Convert.ToString(ObjSequence);
+Console.WriteLine("{0}", StrSequence);
+
+8.    Quotes in Strings
+
+string Quoting = "The \"use\" of quotations causes difficulties.";
+Console.WriteLine(Quoting);
+Quoting = "The use of quotations causes difficulties.";
+Console.WriteLine(Quoting);
+
+9.    Isosceles Triangle
+
+Console.OutputEncoding = System.Text.Encoding.Unicode;
+Console.WriteLine("   ©");
+Console.WriteLine("  © ©");
+Console.WriteLine(" ©   ©");
+Console.WriteLine("© © © ©");
+
+10.    Exchange Variable Values
+
+int a, b;
+a = 5;
+b = 10;
+//принтираме първоначалните стойности
+Console.WriteLine("a={0}, b={1}", a, b);
+//започваме процедура по сменяне на стойностите
+//1во ни трябва променлива "посредник" - "c"
+int c;
+//1во посредника "c", получава стойността на едната от променливите, в случая "а"
+c = a;
+//2ро възлагаме "а", със стойност "b"
+a = b;
+//3то възлагаме "b", със стойност "c"
+b = c;
+//ето, че постигнахме желаният резултат!
+Console.WriteLine("a={0}, b={1}", a, b);
+
+11.    Employee Data
+
+//Име, Фамилия
+string Fn, Ln;
+//възраст
+sbyte Age;
+//пол
+char Sex;
+//Лично ID
+long ID;
+//ID в фирмата
+int EmployeeID;
+
+//Първи запис
+Fn = "Dimitar";
+Ln = "Bonev";
+Age = 22;
+Sex = 'm';
+ID = 8736450923;
+EmployeeID = 27564567;
+Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + EmployeeID + "\n");
+
+//2ри запис
+Fn = "Ivan";
+Ln = "Atanassov";
+Age = 39;
+Sex = 'm';
+ID = 4537687943;
+EmployeeID = 27561563;
+Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + EmployeeID + "\n");
+
+//3ти запис
+Fn = "Stoil";
+Ln = "Mostrov";
+Age = 26;
+Sex = 'm';
+ID = 9463728175;
+EmployeeID = 27565554;
+Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + EmployeeID + "\n");
+
+//4ти запис
+Fn = "Vlado";
+Ln = "Mihov";
+Age = 23;
+Sex = 'm';
+ID = 5867043215;
+EmployeeID = 27562654;
+Console.WriteLine("FirstName: " + Fn + "\nLastName: " + Ln + "\nAge: " + Age + "\nSex: " + Sex + "\nPersonal ID: " + ID + "\nEmployee ID: " + EmployeeID + "\n");
+
+12.    Bank Account Data
+
+string FName, MName, LName, BName, IBAN;
+decimal amount;
+ulong CreditCard, DebitCard, MasterCard;
+
+FName="Ivan";
+MName="Nikolov";
+LName="Atanassov";
+BName="Първа Инвестиционна Банка";
+IBAN="BG20TTBB94003526341239";
+amount = 243776.114M;
+CreditCard = 0220020043687900;
+DebitCard = 5467911156773546;
+MasterCard = 1627069517354657;
+
+Console.WriteLine("First Name: " + FName + "\nMiddle Name: " + MName + "\nLast Name: " + LName + "\nBank Name: " + BName + "\nIBAN: " + IBAN + "\nBalance: " + amount + "\nCreditCard: " + CreditCard + "\nDebitCard: " + DebitCard + "\nMasterCard: " + MasterCard + "\n");
+
+13.    Null Values Arithmetic
+
+int? NullInt=null;
+double? NullDoub=null;
+Console.WriteLine("Nullable Int: {0}, Nullable Double: {1}", NullInt, NullDoub);
+NullInt = 123;
+NullDoub = 12.667;
+Console.WriteLine("Nullable Int(assigned val): {0}, Nullable Double(assigned val): {1}", NullInt, NullDoub);
+
+14.    * Print the ASCII Table
+
+for (int i = 0; i < 256; i++)
+{
+        Console.WriteLine(i + " --> \"" + (char)i + "\" in ASCII");
+}
